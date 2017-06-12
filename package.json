@@ -3,9 +3,7 @@
   "version": "0.0.1",
   "description": "a pokemon team builder and organizer",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ta3woon/pokemon-party-planner.git"
@@ -22,5 +20,12 @@
     "builder",
     "and",
     "organizer"
-  ]
+  ],
+  "devDependencies": {},
+  "dependencies": {
+    "angular": "^1.6.4",
+    "@uirouter/angularjs": "^1.0.3",
+    "express": "^4.15.3",
+    "mongoose": "^4.10.5"
+  }
 }
