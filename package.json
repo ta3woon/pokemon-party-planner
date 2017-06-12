@@ -23,9 +23,15 @@
   ],
   "devDependencies": {},
   "dependencies": {
-    "angular": "^1.6.4",
     "@uirouter/angularjs": "^1.0.3",
+    "angular": "^1.6.4",
+    "body-parser": "^1.17.2",
     "express": "^4.15.3",
-    "mongoose": "^4.10.5"
+    "knex": "^0.13.0",
+    "live-server": "^1.2.0",
+    "mongoose": "^4.10.5",
+    "morgan": "^1.8.2",
+    "nodemon": "^1.11.0",
+    "pageres": "^4.5.0"
   }
 }
