@@ -1,0 +1,26 @@
+{
+  "name": "pokemon-party-planner",
+  "version": "0.0.1",
+  "description": "a pokemon team builder and organizer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ta3woon/pokemon-party-planner.git"
+  },
+  "author": "tae",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ta3woon/pokemon-party-planner/issues"
+  },
+  "homepage": "https://github.com/ta3woon/pokemon-party-planner#readme",
+  "keywords": [
+    "pokemon",
+    "team",
+    "builder",
+    "and",
+    "organizer"
+  ]
+}
