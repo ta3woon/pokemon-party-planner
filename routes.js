@@ -23,7 +23,6 @@ router.post('/create', function(req, res){
 		res.json(create);
 	};
 });
-// router.get('')
-// router.post('')
+
 
 module.exports = router;

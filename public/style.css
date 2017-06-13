@@ -7,8 +7,8 @@
 }
 
 .options {
-	padding: 10px;
-	background: lightgray;
+	/*padding: 10px;*/
+	/*background: lightgray;*/
 }
 
 .create-party {
@@ -33,4 +33,39 @@
   position: absolute;
   top: 15px;
   right: 10px;
+}
+
+.main-img {
+  zoom: 200%;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-title {
+  font-weight: bold;
+  color: white;
+  padding-right: 15px;
+}
+
+.dropdown {
+  height: 50px;
+  width: 25%;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.pokemon:hover {
+  color: red;
+}
+
+.pokemon:active {
+  color: pink;
 }

@@ -1,26 +1,32 @@
-<!-- <nav class="navbar navbar-default">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">Pokemon Party Planner</a>
-    </div>
-</nav> -->
-
-<div class="container">
-  <div class="options">
-  	<select ng-model="selectedType" ng-options="type for type in typeNames" ng-change="findType(selectedType)">Select Type</select>
-  </div>
+  <nav class="navbar navbar-inverse nav">
+  	<h4 class="nav-title">Pokedex Type Selector</h4>
+  	  	<select class="dropdown" ng-model="selectedType" ng-options="type for type in typeNames" ng-change="findType(selectedType)" ng-init="selectedType = typeNames[0]">Select Type</select>
+  </nav>
 
 
 
   	<div class="container col-sm-6">
-		<div ng-model="pokemon" ng-repeat="pokemon in pokemonNames" ng-click="pokemonInfo(pokemon)">
-			 {{pokemon}}
-		</div>
+		<h4 class="pokemon" ng-model="pokemon" ng-repeat="pokemon in pokemonNames" ng-click="pokemonInfo(pokemon)">
+			{{pokemon}}
+		</h4>
 	</div>
 
-	<div class="container col-sm-6"">
-		<img src="{{selectedPokemon.image}}">
-		<div>ID: {{selectedPokemon.id}}</div>
-		<div>Name: {{selectedPokemon.name}}</div>
+	<div class="container col-sm-6">
+		<img class="main-img" src="{{selectedPokemon.image}}">
+		
+		<div><h4>{{selectedPokemon.name}}</h4><h5>ID: {{selectedPokemon.id}}</h5></div>
+		</br>
+		<h5>Types: {{selectedPokemon.type1}}, {{selectedPokemon.type2}}</h5>
+		<div>
+			<h5>Stats: </h5>
+			<ul>
+			<li><h6>Speed: {{selectedPokemon.speed}}</h6></li>
+			<li><h6>Sp. Def: {{selectedPokemon.spdef}}</h6></li>
+			<li><h6>Sp. Attack: {{selectedPokemon.spatt}}</h6></li>
+			<li><h6>Attack: {{selectedPokemon.att}}</h6></li>
+			<li><h6>HP: {{selectedPokemon.hp}}</h6></li>
+			</ul>
+		</div>
 	</div>
 
 </div>
