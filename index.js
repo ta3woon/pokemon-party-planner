@@ -30,5 +30,6 @@ app.use('/api', router);
 
 
 // LISTEN  ==============================================
-app.listen(3000)
-console.log('listening??');
+var port = process.env.PORT || 3000
+app.listen(port)
+console.log('listening on ', port);
