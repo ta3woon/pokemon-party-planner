@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "description": "a pokemon team builder and organizer",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "start": "node ./server.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ta3woon/pokemon-party-planner.git"
