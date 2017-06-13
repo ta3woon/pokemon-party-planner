@@ -1,7 +1,7 @@
 // SETUP ==============================================
 
 // const router = require('express').Router()
-const express = require('express')
+const express = require('express') // 
 const mongoose = require('mongoose')
 const morgan = require('morgan')
 const path = require('path')
@@ -15,8 +15,8 @@ var app = express();
 
 // CONFIG ==============================================
 app.use(parser.json());
-app.use('/scripts', express.static(path.resolve(__dirname, './node_modules')))
-// app.set('views', __dirname + '/views');
+app.set('/scripts', express.static(path.resolve(__dirname, './node_modules')))
+// app.set('/views', __dirname + '/views');
 app.use(express.static(path.resolve(__dirname, './public')))
 app.use('/api', router);
 // app.use(express.static(__dirname + '/public'))

@@ -1,16 +1,13 @@
-angular.module('create-party')
-.controller('CreateCtrl', function() {
-})
-.directive('search', function() {
+angular.module('createParty')
+// .controller('createCtrl', function() {
+// })
+.directive('createParty', function() {
   return {
     scope: {
-      service: '<',
-      result: '<'
     },
-    restrict: 'E',
-    controller: 'CreateCtrl',
+    controller: 'CreateController',
     controllerAs: 'ctrl',
     bindToController: true,
-    templateUrl: 'public/templates/create-party.html'
+    templateUrl: '/public/templates/create-party.html'
       };
 });

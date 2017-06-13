@@ -6,79 +6,35 @@
     <meta charset="utf-8">
   <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    <script src="index.js"></script>
-    <script src="public/app.js"></script>
-    <script src="public/style.css"></script>
-    <script src="public/controllers/new-party.js"></script>
-    <script src="public/controllers/party-list.js"></script>
-    <script src="public/templates/party-list.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.js"></script>
+    <!-- <script src="/services/link-factory.js"></script> -->
+
+    <!-- <script src="index.js"></script> -->
+
+
     <title>Pokemon Party Planner</title>
        <!-- custom style -->
-    <style>
-      .navbar-brand {
-        text-align: center;
-      }
-
-      .options {
-        padding: 10px;
-        background: lightgray;
-      }
-
-      .party-table {
-          /*padding-left: 30px;*/
-      }
-
-      .create-party {
-        padding-bottom: 20px;
-        float: left;
-        width: 48%;
-        padding-right: 20px;
-      }
-
-      .view-party {
-        padding-bottom: 20px;
-        float: left;
-        width: 50%;
-      }
-
-      .dropdown-toggle {
-          width: 100%;
-          text-align:left;
-      }
-
-      .caret {
-          position: absolute;
-          top: 15px;
-          right: 10px;
-      }
-    </style>
   </head>
 
 
-  <body> 
+  <body ng-app="App"> 
     <!-- nav header -->
-    <nav class="navbar navbar-default">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">Pokemon Party Planner</a>
-        </div>
-    </nav>
-
-    <!-- <div class="container"> -->
-      <app ng-app="app">
-      </app>
-
-   
-   <!--  
-      <div class="options">
-        <button>create party</button>
-        <button>view party</button>
+  <nav class="navbar navbar-default">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Pokemon Party Planner</a>
       </div>
+  </nav>
 
 
-      <div class="create-party">
+    <!-- <app ></app> -->
+
+
+    <!--   <div class="create-party">
         <h1>create party</h1>
         <form>
           <label>Pokemon 1:</label></br>
@@ -181,9 +137,21 @@
               </tbody>
             </table>
         </div>
-      </div>
- -->
-    <!-- </div> -->
-  </body>
+      </div> -->
+
+
+  <div class="container">
     <ui-view></ui-view>
+  </div>
+  <!-- <div ui-view></div> -->
+
+  <!-- <script src="components/create.js"></script> -->
+  <!-- <script src="components/view.js"></script> -->
+  <script src="controllers/create-party.js"></script>
+  <script src="controllers/party-list.js"></script>
+  <!-- <script src="components/app.js"></script> -->
+  <script src="app.js"></script>
+  </body>
+  <!-- <link rel="stylesheet" src="style.css"> -->
+    
 </html>

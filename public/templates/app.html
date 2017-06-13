@@ -1,16 +1,30 @@
-<div class="options">
-  <button>create party</button>
-  <button>view party</button>
+<!-- <nav class="navbar navbar-default">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Pokemon Party Planner</a>
+    </div>
+</nav> -->
+
+<div class="container">
+  <div class="options">
+  	<select ng-model="selectedType" ng-options="type for type in typeNames" ng-change="findType(selectedType)">Select Type</select>
+  </div>
+
+
+
+  	<div class="container col-sm-6">
+		<div ng-model="pokemon" ng-repeat="pokemon in pokemonNames" ng-click="pokemonInfo(pokemon)">
+			 {{pokemon}}
+		</div>
+	</div>
+
+	<div class="container col-sm-6"">
+		<img src="{{selectedPokemon.image}}">
+		<div>ID: {{selectedPokemon.id}}</div>
+		<div>Name: {{selectedPokemon.name}}</div>
+	</div>
+
 </div>
 
-<div class="create-party">
-  <!-- <h1>create a party</h1> -->
-  <create-party></create-party>
-</div>
-
-<div class="view-party">
-  <!-- <h1>view party</h1> -->
-  <view-party> <!-- class="party-table" -->
-  </view-party>
-</div>
-
+<!--   <div class="create-party">
+    <create-party></create-party>
+  </div> -->

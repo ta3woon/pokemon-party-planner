@@ -3,29 +3,25 @@ const config = require('./config')
 const Pageres = require('pageres')
 // var Party = require('./app/models/party.js')
 
-router.get('/party', function(req, res){
-
+router.get('/create', function(req, res){
 	Party.find(function(err, parties) {
 		if (err) {
 			res.send(err)
 		}
-		res.json(parties);
+		res.json(view);
 	})
 })
 
-router.post('/parties', function(req, res){
+router.post('/create', function(req, res){
 	var name = req.body.name;
-
 	Party.create({
 		name: req.body.name
 	}), function(err, parties) {
 		if (err) {
 			res.send(err)
 		}
-		res.json(parties);
+		res.json(create);
 	};
-
-
 });
 // router.get('')
 // router.post('')

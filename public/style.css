@@ -1,7 +1,36 @@
-/*html, body {
-  font-family: sans-serif;
-}*/
-
 .create-team, .view-team {
   padding-bottom: 100px;
+}
+
+.navbar-brand {
+	text-align: center;
+}
+
+.options {
+	padding: 10px;
+	background: lightgray;
+}
+
+.create-party {
+  padding-bottom: 20px;
+  float: left;
+  width: 48%;
+  padding-right: 20px;
+}
+
+.view-party {
+	padding-bottom: 20px;
+	float: left;
+	width: 50%;
+}
+
+.dropdown-toggle {
+  width: 100%;
+  text-align: left;
+}
+
+.caret {
+  position: absolute;
+  top: 15px;
+  right: 10px;
 }
