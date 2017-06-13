@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+  <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="index.js"></script>
+    <script src="public/app.js"></script>
+    <script src="public/style.css"></script>
+    <script src="public/controllers/new-party.js"></script>
+    <script src="public/controllers/party-list.js"></script>
+    <script src="public/templates/party-list.js"></script>
+    <title>Pokemon Party Planner</title>
+       <!-- custom style -->
+    <style>
+      .navbar-brand {
+        text-align: center;
+      }
+
+      .options {
+        padding: 10px;
+        background: lightgray;
+      }
+
+      .party-table {
+          /*padding-left: 30px;*/
+      }
+
+      .create-party {
+        padding-bottom: 20px;
+        float: left;
+        width: 48%;
+        padding-right: 20px;
+      }
+
+      .view-party {
+        padding-bottom: 20px;
+        float: left;
+        width: 50%;
+      }
+
+      .dropdown-toggle {
+          width: 100%;
+          text-align:left;
+      }
+
+      .caret {
+          position: absolute;
+          top: 15px;
+          right: 10px;
+      }
+    </style>
+  </head>
+
+
+  <body> 
+    <!-- nav header -->
+    <nav class="navbar navbar-default">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Pokemon Party Planner</a>
+        </div>
+    </nav>
+
+    <!-- <div class="container"> -->
+      <app ng-app="app">
+      </app>
+
+   
+   <!--  
+      <div class="options">
+        <button>create party</button>
+        <button>view party</button>
+      </div>
+
+
+      <div class="create-party">
+        <h1>create party</h1>
+        <form>
+          <label>Pokemon 1:</label></br>
+          <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Pokemon
+            <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+              <li><a href="#">Bulbasaur</a></li>
+              <li><a href="#">Bulbasaur</a></li>
+              <li><a href="#">Bulbasaur</a></li>
+            </ul>
+          </div>
+          </br>
+          <div class="form-group">
+            <label for="usr">Pokemon 2:</label>
+            <input type="text" class="form-control" id=""></br>
+
+            <label for="usr">Pokemon 3:</label>
+            <input type="text" class="form-control" id=""></br>
+
+            <label for="usr">Pokemon 4:</label>
+            <input type="text" class="form-control" id=""></br>
+
+            <label for="usr">Pokemon 5:</label>
+            <input type="text" class="form-control" id=""></br>
+
+            <label for="usr">Pokemon 6:</label>
+            <input type="text" class="form-control" id=""></br>
+          </div>
+
+        </form>
+       
+       <button>Submit Party</button>
+      </div>
+
+   
+      <div class="view-party">
+        <h1>view party</h1>
+        <div class="party-table">
+          <div class="float-left">
+            <h3 style="float:left;">party1: islandcrew</h3>
+            <button style="float: right;margin-top: 20px; margin-bottom: 10px;">Delete</button>
+          </div>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Name</th>
+                  <th>Type</th>
+                  <th>Tier</th>
+                  <th>Edit</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>001</td>
+                  <td>Bulbasaur</td>
+                  <td>Grass</td>
+                  <td>UU</td>
+                  <td>
+                      <a style="color:green"><i class="glyphicon glyphicon-pencil"></i></a>
+                      <span style="padding:0 5px; color: lightgray">|</span>
+                      <a style="color:red"><i class="glyphicon glyphicon-remove"></i></a>
+                  </td>
+                </tr>            
+                <tr>
+                  <td>001</td>
+                  <td>Bulbasaur</td>
+                  <td>Grass</td>
+                  <td>UU</td>
+                  <td>Legal</td>
+                </tr>
+                <tr>
+                  <td>001</td>
+                  <td>Bulbasaur</td>
+                  <td>Grass</td>
+                  <td>UU</td>
+                  <td>Legal</td>
+                </tr>
+                  <td>001</td>
+                  <td>Bulbasaur</td>
+                  <td>Grass</td>
+                  <td>UU</td>
+                  <td>Legal</td>
+                </tr>            
+                <tr>
+                  <td>001</td>
+                  <td>Bulbasaur</td>
+                  <td>Grass</td>
+                  <td>UU</td>
+                  <td>Legal</td>
+                </tr>
+                <tr>
+                  <td>001</td>
+                  <td>Bulbasaur</td>
+                  <td>Grass</td>
+                  <td>UU</td>
+                  <td>Legal</td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+      </div>
+ -->
+    <!-- </div> -->
+  </body>
+    <ui-view></ui-view>
+</html>
